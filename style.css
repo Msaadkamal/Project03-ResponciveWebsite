@@ -1,0 +1,339 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    position: relative;
+}
+.head{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 4.3vw ;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4);
+    position: fixed;
+
+}
+.logo img{
+    width: 80%;
+    margin-top: -1vw;
+    cursor: pointer;
+    }
+.homeSec a{
+    color: #0000ff;
+    margin-left: 1.2vw;
+    font-size: 1.8vw;
+    transition: all 0.5s;
+
+}
+.homeSec a:hover{
+    color: black;
+}
+.icons{
+    font-size: 1.8vw;
+    font-weight: 500;
+   
+}
+.icons .fas{
+    padding-left: 1vw;
+    cursor: pointer;
+}
+.fas:hover{
+    color: #0000ff;
+}
+#menu-bars{
+    display: none;
+}
+.PopupIcon{
+
+    background: #0000ff;
+    width:45%;
+    height: 45vh;
+    border-radius: 13px;
+    position: absolute;
+    top: 20%;
+    right:-13px;
+    opacity: 1;
+    transition: all 0.7s;
+}
+.active{
+    display: none;
+}
+.closeicon {
+    text-align: left;
+    margin-right: 17px;
+    font-size: 33px;
+    font-weight: 400;
+    color: #fff;
+}
+.closeicon:hover {
+    color: black;
+}
+
+
+.PopupIcon a{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    border: 1px solid black;
+    color:#fff;
+    text-align: left;
+
+}
+
+
+
+
+
+/* <!-- ///////////////////////////////Background-Image/////////////////////////// --> */
+.subSec{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgaes/andre-alexander-CKyD4ex3hUQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subSecond h2{
+    text-align: center;
+    font-size: 2.6vmax;
+    color: #fff;
+    font-weight: 600;
+}
+.subSecond h1{
+    font-size: 3.4vmax;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+
+}
+.subSecond span{
+    color: #0000ff;
+}
+@media (max-width:600px) {
+    .head{
+        padding: 2vw 4.3vw ;
+        height: 60px;
+    }
+    .logo img{
+        width: 70%;
+    }
+    .homeSec a{
+        display: none;
+    }
+    #menu-bars{
+        display:initial;
+    }
+    .subSecond h2{
+        font-size: 30px;
+
+}
+.subSecond h1{
+    font-size: 37px;
+}
+.icons{
+    font-size: 3vw;
+   
+}
+}
+/* <!-- ///////////////////////////////Input-Section/////////////////////////// --> */
+.inputtx{
+    display: flex;
+    width: 85%;
+    margin: 10vw auto;
+    height: 17vh;
+    background-color: black; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+.inputtx input   {
+    padding: 10px ;
+    outline: none;
+    font-size: 1.2vw;
+    font-weight: 500;
+
+}
+.inputtx a{
+    background-color: #0000ff;
+    padding: 11.3px 12px;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+/* <!-- ///////////////////////////////Display-Section/////////////////////////// --> */
+.award{
+    width: 89%;
+    margin: 0 auto;
+}
+.hotelshow{
+    display: flex;
+    margin: 4vw 0 ;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    
+}
+.award h1,.room h1{
+    font-size: 3.4vw;
+    text-align: center;
+    margin-bottom: 4vw;
+    font-weight: 800;
+}
+.award h1 span{
+    color: #0000ff;
+}
+.Decuration{
+    margin: 10px 0.5vw;
+    flex-basis: 360px;
+}
+.Decuration img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 2vw;
+}
+.Decuration h2{
+    text-align: center;
+    font-size: 2.2vmax;
+    font-weight: 700;
+    margin-bottom: 1.1vw;
+}
+.Decuration p{
+    text-align: center;
+    font-size: 1.3vmax;
+    font-weight: 500;
+}
+/* <!-- ///////////////////////////////Room////////////////////////////// --> */
+.room{
+    width: 89%;
+    margin: 7vmax auto;
+    margin-bottom: 3.4vmax;
+}
+.room h1 span{
+    color: #0000ff;
+}
+.roomAlig{
+    display: flex;
+    justify-content: center;
+    gap: 1.8vw;
+    flex-wrap: wrap;
+    
+}
+.allRoom{
+    flex-basis: 345px;
+}
+
+.allRoom img{
+    width: 100%;
+    margin-bottom: 1.5vw;
+    border-radius:6px ;
+}
+.allRoom span{
+    
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    margin: 0 20px;
+    margin-right: 195px;
+}
+.allRoom .fas{
+    font-size: 23px;
+    color: #0000ff;
+}
+.btn{
+    text-align: center;
+    margin: 20px 0 0 80px;
+    padding: 13px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.7s;
+    border: 1px solid #0000ff;
+    border-radius: 2px;
+}
+.btn:hover{
+    background-color: #0000ff;
+    color: #fff;
+}
+.bgSec{
+    width: 100%;
+    height: 80vw;
+    background: url(imgaes/secondback.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgSec h1{
+    font-size: 5.2vw;
+    font-weight: 700;
+    color: #fff;
+}
+.bgSec h2{
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: #0000ff;
+}
+/* <!-- ///////////////////Gallery Section//////////////////////////////////////////////// --> */
+.biggallary{
+    width: 65%;
+    margin: 2vh auto;
+    
+}
+.biggallary h1{
+    font-size: 3.4vw;
+    text-align: center;
+    margin-bottom: 2.5vw;
+    font-weight: 800;
+
+}
+.biggallary span{
+    color: #0000ff;
+}
+.GallaySec{
+    display: flex;
+     align-items: center; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.GallaySec img{
+    flex-basis: 30px;
+    margin: 0.6vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
